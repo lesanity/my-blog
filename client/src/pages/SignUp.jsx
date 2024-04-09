@@ -53,19 +53,19 @@ export default function SignUp() {
       <div className='flex-1'>
         <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
           <div>
-            <Label value='你的用户名' />
+            <Label value='用户名' />
             <TextInput type='text'
               placeholder='用户名'
               id='username' onChange={handleChange} />
           </div>
           <div className=''>
-            <Label value='你的邮箱' />
+            <Label value='邮箱' />
             <TextInput type='email'
               placeholder='name@youremail.com'
               id='email' onChange={handleChange} />
           </div>
           <div className=''>
-            <Label value='你的密码' />
+            <Label value='设置密码' />
             <TextInput type='password'
               placeholder='密码'
               id='password' onChange={handleChange} />
