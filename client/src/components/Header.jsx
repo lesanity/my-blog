@@ -14,7 +14,7 @@ export default function Header() {
       <form>
         <TextInput
           type='text'
-          placeholder='Search...'
+          placeholder='搜索...'
           rightIcon={AiOutlineSearch}
           className='hidden lg:inline'
         />
@@ -27,24 +27,24 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to='/sign-in'>
-          <Button gradientDuoTone='purpleToBlue' outline>Sign In</Button>
+          <Button gradientDuoTone='purpleToBlue' outline>登录</Button>
         </Link>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={path === '/'} as={'div'}>
           <Link to='/'>
-            Home
+            主页
           </Link>
         </Navbar.Link>
         <Navbar.Link active={path === '/articles'} as={'div'}>
           <Link to='/articles'>
-            Articles
+            文章
           </Link>
         </Navbar.Link>
         <Navbar.Link active={path === '/about'} as={'div'}>
           <Link to='/about'>
-            About
+            关于
           </Link>
         </Navbar.Link>
       </Navbar.Collapse>
